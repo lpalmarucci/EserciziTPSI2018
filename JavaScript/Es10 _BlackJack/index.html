@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title> Black Jack </title>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+  <h1 align="center"> Black Jack</h1>
+  <form>
+	<p>
+      <input type="button" id="btnInizia" value="Avvia" onClick="avvia()">
+	</p>
+   
+    <p> Banco :  <input type="text" id="txtBanco" readonly> &nbsp;&nbsp;
+	    Giocatore : <input type="text" id="txtUser" readonly>
+    </p>
+	
+    <table border="1" cellspacing="3" cellpadding="2">
+    <tr>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+      <td><input type="text" name="txtNum" size = 2 readonly></td>
+    </tr>
+    <tr>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(0)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(1)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(2)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(3)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(4)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(5)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(6)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(7)"></td>
+      <td> <input type="checkbox" name="chkNum" onClick="somma(8)"></td>
+    </tr>
+    </table>
+    
+    <p> 
+      <input type="button" id="btnConfronta" value="Confronta" onClick="confronta()">
+    </p>
+  </form>
+</body>
+</html>

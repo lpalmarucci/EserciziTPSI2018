@@ -1,0 +1,50 @@
+#wrapper{
+	width:800px;
+	height:470px;
+	margin:0 auto;
+	border:1px solid black;
+    position:relative;
+}
+
+.pedina, .bersaglio {
+	position: absolute;
+	width: 150px;
+	height: 40px;
+	padding: 4px;
+	margin: 4px;
+	border: 2px solid #666;
+	/* larghezza complessiva = 150 + 10 + 10 = 170px  */
+	/* altezza complessiva di ciascun pulsante = 60px */
+	text-align: center;
+	line-height: 40px;
+	font-size: 16pt;
+	font-weight: bold;
+}
+.pedina{
+	left: 25px;
+	background-color: RGB(255, 255, 180);
+	z-index: 2;
+}
+.giallo{
+	background-color: #FF0;
+}
+.bersaglio{
+	right: 25px;
+	background-color: #CCC;
+	z-index: 1;    
+	/* left: 605px;   800 - 170 - 25  */
+}
+
+.verde{
+    background-color: #6F6;
+}
+.over{
+    background-color: #0A0;
+}
+
+#btnRiavvia{
+    display:block;
+	width:80px;
+	padding: 8px 16px;
+	text-decoration:none;
+}

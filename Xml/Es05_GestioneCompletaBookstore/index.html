@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+	<script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+    <h1>Book Store</h1>
+	<br>
+	<div id="visualizza" style="border: 1px;border-color: black;width: 300px;height: 120px;">
+		<div id="bottoni" style="height: 100px;width: 50px;float: right;">
+			<input type="button" onclick="primo()" value="Primo" style="align: right">
+			<input type="button" onclick="spostaAvanti()" value="Avanti" id="avanti"style="align: right">
+			<input type="button" onclick="spostaIndietro()" value="Indietro" id="indietro"style="align: right">
+			<input type="button" onclick="ultimo()" value="Ultimo" style="align: right">
+		</div>
+		<div id="contenuto" style="height: 100px;width: 250px; border: 1px solid black">
+
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<table border="1">
+		<thead id="tabella">
+					<tr>
+						<th>Titolo</th>
+						<th>Autori</th>
+						<th>Categoria</th>
+						<th>Prezzo</th>
+						<th>Button</th>
+					</tr>
+		</thead>
+		<tbody id="tabLibri">
+
+		</tbody>
+	</table>
+</body>
+</html>

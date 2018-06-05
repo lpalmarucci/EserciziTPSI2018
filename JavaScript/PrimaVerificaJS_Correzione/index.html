@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Verifica Java Script</title>
+	<script type="text/javascript" src="index.js"></script>
+	<style>
+		input[name=txtLettera]{
+			width:36px;
+			padding:0;
+			margin:2px;
+			font-size:20pt;
+			text-align:center;
+		}
+		input[name=btnSposta]{
+			width:36px;
+			padding:0;
+			margin:2px;
+			box-sizing:content-box;
+		}
+	</style>
+</head>
+
+<body>
+	<form>
+	    <h1> Registrazione </h1>
+		<label> Nome: <input type="text" id="txtNome"/> </label>
+		<br/>
+		
+		<label> Residenza: 
+			<select id="lstResidenza"/>  
+				<option value="Fossano"> Fossano </option>
+				<option value="Savigliano"> Savigliano </option>
+				<option value="Saluzzo"> Saluzzo </option>
+				<option value="Cuneo"> Cuneo </option>
+			</select>
+		</label>
+		<br/>
+		
+ 		<label> Indirizzo di studio: </label><br/>
+		<input type="radio" name="optIndirizzo" value="Informatica" onclick="passa(0,0)"/> Informatica <br/>
+		<input type="radio" name="optIndirizzo" value="Meccanica" onclick="passa(1,0)"/> Meccanica <br/>
+		<input type="radio" name="optIndirizzo" value="Elettrotecnica" onclick="passa(2,0)"/> Elettrotecnica <br/>
+		<input type="radio" name="optIndirizzo" value="Liceo" onclick="passa(3,0)"/> Liceo <br/>
+		
+ 		<label> Hobbies: </label><br/>
+		<input type="checkbox" name="chkHobbies" value="Sport" onclick="passa(0,1)"/> Sport <br/>
+		<input type="checkbox" name="chkHobbies" value="Cinema" onclick="passa(1,1)"/> Cinema <br/>
+		<input type="checkbox" name="chkHobbies" value="Musica" onclick="passa(2,1)"/> Musica <br/>
+		<input type="checkbox" name="chkHobbies" value="Libri" onclick="passa(3,1)"/> Libri <br/>
+		<br/>  	
+		
+		<input type="button" value="Invia" onclick="invia()"/>
+		<div id="txtArea" style="width:300px; height:80px; border:1px solid blue"/> </div>
+	</form>
+	<hr>
+
+	
+	<form>
+	    <h1> Gioco </h1>	
+		<input type="button" id="btnGenera" value="Genera" onclick="genera()" /> <br/>
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" />
+		<input type="text" name="txtLettera" /> &nbsp;&nbsp;
+		<input type="text" name="txtLettera" /> 
+		<br/>
+		
+		<input type="button" name="btnSposta" onclick="sposta(0)"/>
+		<input type="button" name="btnSposta" onclick="sposta(1)"/>
+		<input type="button" name="btnSposta" onclick="sposta(2)"/>
+		<input type="button" name="btnSposta" onclick="sposta(3)"/>
+		<input type="button" name="btnSposta" onclick="sposta(4)"/>
+		<input type="button" name="btnSposta" onclick="sposta(5)"/>
+		<input type="button" name="btnSposta" onclick="sposta(6)"/> &nbsp;&nbsp;
+		<input type="button" name="btnSposta" disabled onclick="sposta(7)"/>
+		<br/><br/>
+		
+		<input type="button" id="btnVerifica" value="Verifica"  onclick="verifica()"/>
+	</form>
+</body>
+</html>

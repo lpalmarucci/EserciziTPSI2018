@@ -1,0 +1,48 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+h1{
+   text-align:center;
+   font-size:48pt;
+   margin:15px;
+}
+
+#header {
+    width:840px;     /* 120 * 7 */
+    margin:0 auto;
+	padding:10px; 
+	border:1px solid #DDD;
+    overflow: auto;
+}
+
+#wrapper {
+    width:840px;     /* 120 * 7 */
+    margin:0 auto;
+	padding:10px;  /* Compenso i 10+10 di MARGIN delle pedine interne */
+    overflow: auto;
+	position:relative;
+	background-color:rgb(20,20,255);
+}
+
+.pedina {
+    width:100px;
+    height:100px;
+    margin:10px;    /* totale 120 x 120 */
+    padding:0;
+    border-radius:100%;
+	background-color:#AAA;
+    float:left;
+}
+.bianco {
+    background-color:#F0F0F0;
+}
+.rosso {
+    background-color:#F00;
+}
+.giallo {
+    background-color:#FF0;
+}
+
+

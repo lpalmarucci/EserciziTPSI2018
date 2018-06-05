@@ -1,0 +1,39 @@
+var _carte =_wrapper.children(".carteMov");
+
+    _carte.draggable({
+        stack:_ass,
+        cursor:"move",
+        start:function () {
+            $(this).draggable("option","revert","invalid");
+        }
+    });
+    _ass.droppable({"drop":drop});
+    function drop(event, args) {
+        if($(event.target).prop("colore") != args["draggable"].prop("colore")){
+            var val1 =parseInt($(event.target).prop("val")+1);
+            var val2 = parseInt(args["draggable"].prop("val"));
+            if(val1 == val2 ){
+                args["draggable"].draggable("disable");
+                $(event.target).droppable("disable");
+                args["draggable"].droppable({"drop":drop});
+                var top = parseInt($(event.target).css("top"));
+                var left = parseInt($(event.target).css("left"));
+                args["draggable"].css("top", (top+20)+"px");
+                args["draggable"].css("left", (left+1)+"px");
+                //args["draggable"].css("z-index", (parseInt($(event.target).css("z-index")+1)));
+                vittoria[args["draggable"].index]++;
+                if(vittoria[0]==12 && vittoria[1]==12)
+                    alert("HAI VINTO");
+            }
+            else {
+                var left = Math.floor(Math.random()*520);
+                var top = Math.floor(Math.random()*506);
+                args["draggable"].css({"top":top,"left":left});
+            }
+        }
+        else {
+            var left = Math.floor(Math.random()*520);
+            var top = Math.floor(Math.random()*506);
+            args["draggable"].css({"top":top,"left":left});
+        }
+    }

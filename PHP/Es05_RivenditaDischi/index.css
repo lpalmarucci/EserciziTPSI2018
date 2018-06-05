@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+table{
+    margin: 0 auto;
+    text-align: center;
+}
+table thead tr{
+    border: 1px solid black;
+}
+th{
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+}

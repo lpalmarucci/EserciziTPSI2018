@@ -1,0 +1,58 @@
+<html>
+<head>
+ <title> Indovina la parola </title>
+ <script type="text/javascript" src="index.js"></script>
+ <style>
+	input[type=text]{
+	    width:30px;
+		margin:0;
+	}
+	input[type=checkbox]{
+	    width:30px;
+		margin:0;
+	}
+ </style>
+</head>
+
+<body>
+  <H3 align="center"> Indovina la Parola</H3>
+  <HR>
+  <p> 
+    <input type="button" value="Leggi Stringa" onclick="inizializza()" > 
+	&nbsp;&nbsp;&nbsp;&nbsp; 
+	Punti : <input type="text" id="txtPunti" Value='100' readonly>
+  </p>
+  <p> 
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>  
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>  
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>
+    <input type="text" name="txtCar" readonly>  
+    <input type="text" name="txtCar" readonly>  
+  </p>
+  <p> 
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+    <input type="checkbox" name="chkRis" >
+ </p>
+  <p>
+    <input type="text" id="txtIns" maxlength="1">
+    <input type="button" value="Invia" onClick="confronta()" id="btnInvia">
+  </p>
+  <p> 
+    <input type="button" value="Risposta" onClick="rispondi()" id="btnRispondi">
+  </p>
+
+</body>
+</html>

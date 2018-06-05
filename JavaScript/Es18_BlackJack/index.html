@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <title>Black Jack</title>
+    <script type="text/javascript" src="index.js"></script>
+    <style>
+	    #wrapper{
+		  width:990px;
+		  margin: 20px auto;
+		  overflow:auto;
+		}		
+	    #wrapperBanco{
+		  width:400px;
+		  margin: 0;
+		  float:right;
+		}
+		
+        .giocatore, .banco {
+            width:72px;
+            height: 97px;;
+			padding:0;
+			margin:2px;
+			background-image:url(img1/x.gif);
+			float:left;
+        }
+		
+		.titolo1, .titolo2{
+		   font-size:20pt;
+		   font-weight:bold;
+		   margin: 10px 150px;
+		   float:left;		   
+		}
+		.titolo2{
+			float:right;
+		}
+		
+		br{ clear:both }		
+    </style>
+	</head>
+
+	<body>
+		<h1 style="text-align: center;">Black Jack Grafico</h1>
+	
+		<div id="wrapper">
+		    <div class="titolo1"/> giocatore</div>
+			<div class="titolo2"/> banco</div>
+			<br>
+			<div class="giocatore" valore="0" /> </div>
+			<div class="giocatore" valore="1" /> </div>
+			<div class="giocatore" valore="2"/> </div>
+			<div class="giocatore" valore="3" /> </div>
+			<div class="giocatore" valore="4" /> </div>
+            <div id="wrapperBanco">
+				<div class="banco" valore="0"/> </div>
+				<div class="banco" valore="1"/> </div>
+				<div class="banco" valore="2"/> </div>
+				<div class="banco" valore="3"/> </div>
+				<div class="banco" valore="4"/> </div>		
+			</div>				
+		</div>
+		
+		<div id="txtRisultato" style="font-size:20pt">  </div>
+	</body>
+</html>

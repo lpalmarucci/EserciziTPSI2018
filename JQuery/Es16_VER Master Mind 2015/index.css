@@ -1,0 +1,78 @@
+*{
+	margin:0;
+	padding:0;
+}
+h1{
+   text-align:center;
+   font-size:40pt;
+   margin:20px;
+}
+
+#wrapper {
+    width:820px;    /* 420 + 300 + 100  */
+    margin:0 auto;
+    overflow: auto;
+	padding:10px;   
+	border:1px solid black;
+	background-color:#11F;
+}
+
+/*   ******************* Contenitori ********************** */
+
+#pedine{
+    width:400px;    /* 100*4 + 10 + 10 = 420 */
+	padding:10px;  /* Compenso i 10+10 delle caselle vicine */
+	float:left;
+	background-color:rgb(255, 100, 10);
+}
+#indicatori{
+    width:280px;    /* 70*4 + 10 + 10 = 300 */
+	padding:10px;  /* Compenso i 10+10 delle caselle vicine */
+	float:left;
+	background-color:#AAA;
+}
+#pulsanti{
+    width:90px;    /* 90 + 10  = 100  */
+	padding:10px; 
+    padding-left:0;	
+	float:left;
+	background-color:#999;
+}
+
+/*   *************** Oggetti Singoli  ******************** */
+
+.pedina {
+    margin:10px;
+    padding:0;
+    width:80px;    /* totale 100 */
+    height:80px;   /* totale 100 */
+    float:left;
+    background-image:url(img/img0.png);
+	background-size:cover;
+}
+
+.indicatore {
+    margin:10px;
+    padding:0;
+    width:50px;   /* totale 70  */
+    height:50px;  /* totale 100 */
+	margin:25px 10px;
+    float:left;
+    background-color:white;
+}
+
+.pulsante{
+    margin:10px;
+    padding:0;
+    width:70px;   /* totale 90  */
+    height:37px;  /* totale 100 */
+	margin:30px 10px;
+    float:left;
+	text-align:center;
+	line-height:38px;
+	background-color:#AAA;
+	border:1px solid black;
+	border-radius:10px;    
+}
+
+

@@ -1,0 +1,69 @@
+#wrapper {
+	width: 660px;	
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding:0;
+	overflow:auto;
+	border:2px solid red;
+}
+
+#leftFrame{
+	float:left;
+	width: 150px;   
+	height:590px;   
+	box-sizing:border-box;
+	border:1px solid black;
+	border-right:0;
+	padding-top:90px;
+}
+
+#mainFrame{
+    float:right;
+	width:510px;
+	height:590px;
+	box-sizing:border-box;
+    border:1px solid black;
+	border-left:0;
+}
+
+#tabella{
+	border:1px solid black;
+	width:80%;  /* 408 */ 
+	margin-left:50px;
+	margin-top:10px;
+}
+
+#tabella td{
+	height:46px;
+	padding:0;
+	border:1px solid black;
+	position:relative;
+}
+
+.dragg {
+ 	width:32px;
+	height:32px;
+	padding:0;
+    margin:30px;
+	margin-left:50px;
+}
+
+.drag1 { background-image: url("img/cf.png"); }
+.drag2 { background-image: url("img/dw.png"); }
+.drag3 { background-image: url("img/fla.png"); }
+.drag4 { background-image: url("img/flex.png"); }
+.drag5 { background-image: url("img/pdf.png"); }
+.drag6 { background-image: url("img/ps.png"); }
+
+
+.dropped{
+	margin:0;
+	padding:0;
+	width:32px; 
+	height:32px;
+	position:absolute;
+	top:7px;     /* (46-32) / 2  */
+	left:34px;   /* (100-32) / 2 */
+}
+

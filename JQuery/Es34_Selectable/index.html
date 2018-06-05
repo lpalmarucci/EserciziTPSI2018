@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectable</title>
+	<script src="../jquery/jquery-3.2.1.js"></script>
+	<script src="../jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="../jquery-ui-1.12.1/jquery-ui.min.css"/>
+	<script src="index.js"></script>
+	<link type="text/css" rel="stylesheet" href="stili.css">
+</head>
+
+
+<body>
+
+<div id="feedback">
+	<span>Hai selezionato:</span> <span>none</span>
+</div>
+
+<ul id="wrapper">
+    <!--ui-widget-content è la classe applicata al contenuto dei widget -->
+    <!--ui-state-default  è la classe applicata allo stato di riposo dei pulsanti -->
+	<li class="ui-widget-content">Item 1</li>
+	<li class="ui-widget-content">Item 2</li>
+	<li class="ui-widget-content">Item 3</li>
+	<li class="ui-widget-content">Item 4</li>
+	<li class="ui-widget-content">Item 5</li>
+	<li class="ui-widget-content">Item 6</li>
+</ul>
+
+<a href="#" id="btnSeleziona" class="ui-state-default ui-corner-all">
+	Seleziona
+</a>
+
+<div>
+	<p> click - rettangolo - ctrl+click - pulsante</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+.ui-icon{
+	background-color: white;
+}
+	/* Personalizzazioni del colore di sfondo sui pulsanti PREMUTI */
+	.ui-state-default   {
+	   /* background:white; */
+	}
+	.ui-state-active   {
+	   /* background:red; */
+	}		
+
+	
+	/* ********************** Elenco icone  ********************** */	
+	/* contenitore elenco icone */
+	#wrapper {
+		margin: 0;
+		padding: 0;
+	}	
+	
+	/* contenitore di ogni singola icona */
+	#wrapper li {
+		float: left;
+		margin: 2px;		 
+		cursor: pointer;
+		list-style: none;
+	}	
+
+	
+	/* span, inserito dentro li, � quello che implementa le classi ui-icon
+	   cio� � quelle che contengono fisicamente l'icona. 	
+	 
+	   Le varie classi relative alle singole icone utilizzano 
+	   la propriet� background-position per accedere ad una singola icona  */
+		
+	#wrapper li span.ui-icon {		 
+		margin: 4px; /* per spaziare le icone visualizzate */
+	}	
+	
+
+
+	
+    /* ********************** ICONE PERSONALIZZATE ********************** */	
+	/* definico una icon-className .myIcon */
+	.myIcon {
+		background-image: url(myIcon.gif);
+	} 
+

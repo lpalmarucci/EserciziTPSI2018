@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Dialog</title>
+    <link rel="stylesheet" href="../jqueryui/jquery-ui.css"/>
+	<link type="text/css" rel="stylesheet" href="stili.css">
+ 	<script src="../jqueryui/jquery.js"></script>
+	<script src="../jqueryui/jquery-ui.js"></script>
+	<script type="text/javascript"  src="script.js"></script>
+</head>
+
+
+<body>
+    <!-- DIALOG BOX -->
+	<div id="dialog" title="Dialog normale">
+		<p>Normale finestra di dialog</p>
+	</div>
+	
+	<div id="dialogModale" title="Finestra modale">
+		<p>Questa &egrave; una finestra modale realizzata impostando l'opzione 
+		   <code>modal</code> = <code>true</code>
+		</p>
+	</div>
+	
+	<div id="dialogOkAnnulla" title="Confermi?">
+		<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><span>Confermi l'operazione?</span></p>
+	</div>
+	
+	<!-- PULSANTI -->
+	<p id="apri" class="menu">Apri finestra normale</p>
+	<p id="apriModale" class="menu">Apri finestra Modale</p>
+	<p id="apriOkAnnulla" class="menu">Apri Ok Annulla</p>
+	<p id="apriForm" class="menu">
+	     <a href="dialog-form.html" target="_blank">Esempio Dialog con Form</a>
+	</p>
+</body>
+</html>

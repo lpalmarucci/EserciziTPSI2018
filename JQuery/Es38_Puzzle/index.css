@@ -1,0 +1,32 @@
+#puzzle {
+    margin:10px;
+	margin-top:20px;
+	float:left;
+}
+#puzzle td {
+    width: 135px;
+    height: 145px;
+	background-color:#AFF
+}
+
+#wrapper {
+    margin:10px;
+	margin-top:20px;
+	width: 1200px;
+    height: 600px;
+	background-color:#ccc;
+	float:right;
+	position:relative; /* per il posizionamento delle tessere interne */
+}
+#wrapper img {
+    position:absolute;
+}
+
+
+#imgCompleta {
+    background-image:url(img/imgCompleta.png);
+	width:341px;
+	height:214px;
+}
+
+

@@ -1,0 +1,75 @@
+h1{
+   font-size:36pt;
+   text-align:center;
+   margin:20px;
+   margin-bottom:30px;
+}
+
+#wrapper {
+    width:1400px;
+	height:850px;
+    margin: 0 auto;
+	padding:20px;
+	background-color:#CCC;
+}
+
+/* ******* preview,  elencoImmagini  e  descrizione ******/
+
+#preview {
+    width:650px;
+	height:450px;
+	background-color:#CCC;
+    margin: 15px auto;
+}
+#elencoImmagini {
+    width: 1360px;
+    margin: 30px auto;
+	padding:20px;
+	overflow:auto;
+	border:1px solid black;
+}
+#elencoImmagini .immagine{
+    width: 150px;
+	height:150px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:5px 10px;
+    float: left;
+}
+#descrizione {
+    width: 600px;
+	height:100px;
+	margin:0 auto;
+	font-size:16pt;
+    background-color: #CCC;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
+/* ************** tabella ************/
+#tabella {
+    margin: 10px auto;
+    text-align: center;
+	border:3px solid #00A;
+}
+#tabella th {
+    width: 200px;
+	height:50px;
+	line-height: 50px;
+	border:1px solid #00A;
+	font-size:16pt;
+    background-color: blue;
+	color:white;
+}
+#tabella td{
+    width:200px;
+	height:50px;
+	line-height: 50px;
+	border:1px solid #00A;
+	font-size:16pt;
+    background-color: #FFF;
+	color:#00A;
+}

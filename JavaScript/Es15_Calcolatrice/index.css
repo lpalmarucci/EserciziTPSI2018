@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Input.button*/
+input[type=button]{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 1px;
+}
+#wrapper{
+    width: 220px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+input[type=tel]{
+    width: 214px;
+    margin: 1px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+input:last-of-type{
+    width: 218px;
+    height: 30px;
+    margin-bottom: 2px;
+    margin: 1px;
+}

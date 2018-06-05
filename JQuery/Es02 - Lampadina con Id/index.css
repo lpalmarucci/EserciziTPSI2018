@@ -1,0 +1,25 @@
+#pulsanti{
+    width: 200px;
+	height: 40px;
+    text-align: center;
+	line-height: 40px;
+    margin-left:100px;
+    margin-bottom: 10px;
+    border:1px solid black;
+	border-radius:15px;
+}
+
+/* NEL CSS NELL'ID PREVALE SEMPRE SULLA CLASSE */
+
+#lampadina{
+    width: 150px;
+    height: 273px;
+    margin: 0 auto;
+    background-image: url(lampadina.png);
+    background-color:#CCC;
+    margin-top: 25px;
+}
+
+/*.accesa{
+    background-color: #ffa;
+}*/

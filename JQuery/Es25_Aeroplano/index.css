@@ -1,0 +1,117 @@
+
+#amico {
+	width: 190px;
+	height: 160px;
+	position:absolute;
+	top: 750px;
+	left: 800px;
+}
+
+#nemico {
+	width: 160px;
+	height: 160px;
+	position: absolute;
+	top: -200px;
+    left:0;	
+}
+
+#imgAmico {
+	width:140px;
+	height:140px;
+}
+
+#proiettile1 {
+	width: 20px;
+	height: 50px;
+	/* posizione relativa rispetto al normale flusso position=static */
+	position:relative;
+	top: -50px;
+	left: -140px;
+}
+
+#proiettile2 {
+	width: 20px;
+	height: 50px;
+	/* posizione relativa rispetto al normale flusso position=static */
+	position:relative;
+	top: -50px;
+	left: -55px;
+}
+
+#limiteBasso {
+	width: 1920px;
+	height:20px;
+	position: absolute;
+	top:930px;
+	left: 0px;
+	background-color: red
+}
+
+#limiteSx {
+	width: 20px;
+	height:930px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-color: red
+}
+
+#limiteDx {
+	width: 20px;
+	height:930px;
+	position: absolute;
+	top:0px;
+	left: 1900px;
+	background-color: red
+}
+
+#limiteAlto {
+	width: 1920px;
+	height:20px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background-color: red
+}
+
+
+/* ************************************ */
+#inizio
+{
+	color: orange;
+	text-decoration: underline;
+	font-size: 100px;
+	position: absolute;
+	top: 360px;
+	left: 400px;
+	text-shadow: 10px 10px 5px navy;
+}
+#regole{
+	width: 300px;
+	height: 285px;
+	position: absolute;
+	top: 0px;
+	left: 1600px;
+	border: 2px dotted red;
+	text-align: center;
+}
+#vittoria
+{
+	color: orange;
+	text-decoration: underline;
+	font-size: 100px;
+	position: absolute;
+	top: 380px;
+	left: 600px;
+	text-shadow: 10px 10px 5px navy;
+}
+#perdita
+{
+	color: orange;
+	text-decoration: underline;
+	font-size: 100px;
+	position: absolute;
+	top: 360px;
+	left: 500px;
+	text-shadow: 10px 10px 5px navy;
+}

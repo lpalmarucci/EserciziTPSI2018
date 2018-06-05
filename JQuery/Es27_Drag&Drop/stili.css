@@ -1,0 +1,40 @@
+ #btnAvvia {
+	display:inline-block;
+	width:80px;
+	padding: 8px 16px;
+	text-decoration: none;
+	 margin: 20px;
+ }
+
+#box{     /* .classeBox */
+	width: 120px;
+	height: 120px;
+	float:left;
+	background-color:#ddd;
+	border:2px solid #900;	
+	padding: 8px;
+	margin: 10px;
+}
+
+.bersaglio {
+	width: 250px; 
+	height: 250px; 
+	float:left;	
+	background-color:#ccc;
+	border:2px solid #900;
+	padding: 8px;
+	margin: 10px 10px 10px 0;
+	/* serve per posizionare il clone */
+	position:relative;
+}
+
+.bersaglio p{
+	padding: 0;
+	margin: 0;
+	width: 250px;
+	height: 250px;
+	font-size: 40pt;
+	font-weight: bold;
+	text-align: center;
+	line-height: 250px;
+}

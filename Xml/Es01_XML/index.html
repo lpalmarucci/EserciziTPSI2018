@@ -1,0 +1,36 @@
+<!--formato codifica UFT 8 senza BOM-->
+
+<! doctype html/>
+<html lang="it">
+<head>
+	<meta charset="UTF-8"/> <!--tag di autochiusura-->
+	<script type="application/javascript" src="index.js"></script>
+	<title></title> <!--visualizzato nella scheda-->
+</head>
+
+<body align="center">
+	<h1>Book Store</h1> <!--visualizzato nella pagina-->
+	<input type="button" onclick="crea()" value="Crea Book Store">
+	<input type="button" onclick="leggi()" value="Leggi Book Store">
+	<input type="button" onclick="visualizza()" value="Crea Book Store">
+	<br>
+	<br>
+	<br>
+	<table border="1" align="center">
+		<thead><!--intestazioni-->
+			<tr>
+				<th>Titolo</th>
+				<th>Categoria</th>
+				<th>Lingua</th>
+				<th>Autori</th>
+				<th>Anno</th>
+				<th>Prezzo</th>
+			</tr>
+		</thead>
+		<tbody id="tabLibri">
+
+		</tbody>
+	</table>
+</body>
+
+</html>

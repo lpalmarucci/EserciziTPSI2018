@@ -1,0 +1,26 @@
+	#wrapper  {   /* ul */
+		width: 200px;
+		margin: 30px auto; 
+		padding: 4px; 
+		list-style-type: none; 
+		border:1px solid black;
+	}
+	/* 22 + 3 + 1 + 4.8 = 30.8*/
+	#wrapper  .mattoni { 
+		margin: 0 3px 3px 3px; 
+		padding: 4.8px;
+		padding-left: 22.5px;
+		font-size: 21px;
+		height: 22px; 
+		border: 1px solid #020;
+		background-color:#0A0;
+		font-size:18pt;
+		font-weight:bold;
+		text-align:center;
+		line-height:22px;
+	}
+	
+	#wrapper .oscilla{
+	    background-color:#A00;
+	}
+	

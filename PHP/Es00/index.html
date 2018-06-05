@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 5%">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <!-- jumbotron -->
+                <div class="jumbotron" data-toggle="collapse" data-target="#login">
+                    <p class="text-center">
+                        <img src="img/Koala.jpg" class="img-circle" width="120">
+                    </p><!-- utilizzo la classe di allineamento di bootstrap -->
+                    <p class="text-center">IIS G.Vallauri - Fossano</p>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row collapse" id="login"> <!--utente-->
+            <div class="col-sm-4"></div> <!--vuoto-->
+            <div class="col-sm-4">
+                <form method="post" name="login">
+                <div class="input-group form-group" style="padding-top: 20px">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="user" type="text" class="form-control" name="username" placeholder="USERNAME">
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="psw" type="text" class="form-control" name="username" placeholder="PASSWORD">
+                </div>
+                <div>
+                    <input type="button" class="form-control btn btn-primary" value="INVIA" onclick="window.location.href='pagina2.html'">
+                </div>
+                <div class="form-group">
+                    <input type="button" class="btn btn-link form-control" value="Registrati" style="text-align:left;line-height: 20px;padding-bottom: 0;">
+                    <input type="button" class="btn btn-link form-control" value="Hai dimenticato la password?" style="text-align:left;line-height: 20px;padding-top: 0">
+                </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>

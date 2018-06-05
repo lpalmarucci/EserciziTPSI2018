@@ -1,0 +1,34 @@
+#wrapper {
+    width:144px;
+	height:144px;
+	padding:0;
+    margin:50px auto;
+	background-color:#AAA;
+	position:relative;
+    /*^-->Diventa possibile posizionare in modo absolute gli
+          elementi figli
+    */
+}
+
+/*occupazione complessiva = 30+0+4+2 = 36*4 = 144 px  */
+
+.pedina {
+    width:30px;
+    height:30px;
+    padding:0;
+    margin:2px;
+    line-height:30px;
+    text-align:center;
+    border: 1px solid #444;
+    background-color: #ffffff;
+    cursor:pointer;
+	position:absolute;
+    /*disabilita la selezione del TESTO*/
+	user-select: none;
+}
+
+.grigio{
+    background-color:lightgray;
+}
+
+
