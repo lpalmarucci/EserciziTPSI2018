@@ -22,7 +22,7 @@
         "<br>Indirizzo di studio: " . $_GET["rdbIndirizzo"] .
         "<br>Hobbies: " . $hobbies .
         "<br>Città di residenza: " . $_GET["lstCitta"] .
-        "<br>Segni particolari: " . $_GET["txtSegni"] . 
+        "<br>Segni particolari: " . $_GET["txtSegni"] .
         "<br>Come hai scoperto la scuola: " . $scoperta;*/
 ?>
 </body>

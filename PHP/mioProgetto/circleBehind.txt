@@ -1,0 +1,42 @@
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #0277bd; /*spessore dei due cerchi; dopo modifico quello più esterno*/
+    transform: translateX(-50%) translateY(-50%); /* per far partire l'animazione dal centro del tag a*/
+    border-radius: 50%;
+    background: transparent;
+    content: "";/*La proprietà content serve per inserire elementi generati e si usa con before e after*/ /*cancella eventuale testo*/
+    opacity: 0; /*nascondo i cerchi*/
+    transition: all 0.3s; /* animazione: da fluidità*/
+    z-index: -1;
+}
+div.circleBehind a:after{
+    border-width: 2px;
+}
+div.circleBehind a:hover:before{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+div.circleBehind a:hover:after{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+
+
+HTML
+
+
+
+
+<div class="container circleBehind">
+    <a>HOME</a>
+    <a>ARTICLES</a>
+    <a>PORTFOLIO</a>
+    <a>ABOUT</a>
+    <a>CONTACT</a>
+</div>

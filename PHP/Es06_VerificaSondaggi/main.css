@@ -1,0 +1,26 @@
+#wrapper{
+    background-color: #aac2e6;
+    back
+}
+div{
+    text-align: center;
+}
+fieldset{
+    width: 30%;
+    margin: 0 auto;
+    padding: 0;
+}
+a > input{
+    margin-bottom: 10px;
+}
+#wrapper{
+    width: 500px;
+    margin: 0 auto;
+}
+#wrapper > div{
+    padding: 5px;
+    margin: 5px;
+}
+#header{
+    padding-top: 10px;
+}

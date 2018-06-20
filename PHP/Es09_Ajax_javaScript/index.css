@@ -1,0 +1,36 @@
+
+form {
+    width: 350px;   
+	/* centratura orizzontale */
+    margin: 20px auto;
+    padding: 25px;
+	border:1px solid black;
+    border-radius: 20px;
+	/* per 'sentire' gli elementi float */
+	overflow:auto;
+}
+
+label, input {
+    float: left;
+    margin: 5px;
+}
+
+label{
+    width: 120px;	
+	color: #00A;
+	text-align:right;
+}
+
+input:text{
+    width: 120px;	
+}
+
+#btnInvia{
+    float:right;
+	margin-right:40px;
+}
+
+#msg {
+	width:300px;
+	text-align:center;
+}

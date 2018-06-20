@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8"> 
+	<title>Esercizio 09</title>
+	<link rel="stylesheet" href="index.css">
+	<script type="application/javascript" src="../jquery/jquery-3.2.1.min.js"></script>
+	<script type="application/javascript"  src="index.js"> </script>
+</head>
+
+<body>
+	<h2 style="text-align:center";> Registrati al nostro sito</h2>
+	<h3 style="text-align:center"> Scegli il tuo nickname :</h3>
+	
+	<form action="insert.php" method="post">
+	    <label for="txtNome"> nickname : </label>
+     	<input type="text" name="txtNome" id="txtNome" 
+			   placeholder="inserire nickname" onkeyup="verifica()" />
+		
+		<div id="msg" style="">  </div>
+		
+		<label for="txtResidenza"> Residenza : </label>
+		<input type="text" name="txtResidenza" id="txtResidenza"/> 
+		
+		<label for="txtEta"> Eta : </label>
+		<input type="text" name="txtEta" id="txtEta"/>
+		
+		<label for="txtClasse"> Classe : </label>
+		<input type="text" name="txtClasse" id="txtClasse" /> 
+		
+		<br style="clear:left"> 
+		<br>
+		<input type="submit" id="btnInvia" disabled value="Invia"/>
+	<form>
+	
+</body>
+</html>

@@ -19,8 +19,6 @@ catch (mysqli_sql_exception $ex) {
 if(isset($_GET['idDomanda'])&&isset($_GET['optVoto'])){
     $id=$con->real_escape_string($_GET['idDomanda']);
     $campo=$con->real_escape_string($_GET['optVoto']);
-
-
 }
 else{
     $con->close();
@@ -34,6 +32,8 @@ catch (mysqli_sql_exception $ex){
     $con->close();
     die( "errore esecuzione query <br> $ex->getMessage()");
 }
+setcookie("sondaggio$id",true,time()+30,"/"); #settaggio cookie
+
 ?>
 
 <div>

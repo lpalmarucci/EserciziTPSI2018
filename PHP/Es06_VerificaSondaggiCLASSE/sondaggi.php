@@ -6,6 +6,10 @@
 </head>
 <body>
 <?php
+$id=$_POST['lstSondaggio'];
+if(isset($_COOKIE["sondaggio$id"])){
+    die("Hai già votato a questa domanda!<br><a href='index.php'>TORNA ALLA PAGINA PRINCIPALE</a>");
+}
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try{
     $con = new mysqli('localhost', 'root', '', '4b_verificasondaggi');

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+	<script type="application/javascript" src="index.js"></script>
+    <!--<script type="application/javascript" src="inserisci.js"></script>-->
+    <title>Login</title>
+</head>
+<body>
+    <h1 align="center">UPLOAD DI UN FILE</h1>
+    <div style="width:100px; margin: 0 auto">
+        <form action="upload.php" method="post" enctype="multipart/form-data"><!-- si puo solo fare in post-->
+            <span>Scegli un file</span>
+            <input type="file" name="txtFile[]" multiple> <!--[] per far capire che è un vettore-->
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>

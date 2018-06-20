@@ -5,7 +5,7 @@
 		<title>Es04 Registrazione</title>
 		<style>
 			form{
-		        margin:0 auto; 
+		        margin:0 auto;
 			    width:400px;
 			}
 			form h2{
@@ -31,32 +31,32 @@
 		    <h2> Registrati al nostro sito </h2>
 			<span>Nome:</span><br/>
 			<input type="text" name="txtNome" id="txtNome" placeholder="Inserisci qui il tuo nome"/><br/>
-			
+
 			<span>Indirizzo di studio:</span><br/>
 			<input type="radio" name="rdbIndirizzo" value="Informatica"/>Informatica<br/>
 			<input type="radio" name="rdbIndirizzo" value="Meccanica"/>Meccanica<br/>
 			<input type="radio" name="rdbIndirizzo" value="Elettrotecnica"/>Elettrotecnica<br/>
 			<input type="radio" name="rdbIndirizzo" value="Liceo"/>Liceo<br/>
-			
+
 			<span>Hobbies:</span><br/>
 			<input type="checkbox" name="chkHobbies[]" value="Sport"/>Sport<br/>
 			<input type="checkbox" name="chkHobbies[]" value="Musica"/>Musica<br/>
 			<input type="checkbox" name="chkHobbies[]" value="Cinema"/>Cinema<br/>
 			<input type="checkbox" name="chkHobbies[]" value="Lettura"/>Lettura<br/>
-			
+
 			<span>Città di residenza:</span><br/>
 			<select name="lstCitta">
 				<option value="1">Fossano</option>
 				<option value="2">Cuneo</option>
 				<option value="3">Torino</option>
 				<option value="4">Alba</option>
-			</select> 
+			</select>
 			<br/>
-			
+
 			<span>Segni particolari:</span> <br>
 			<textarea name="txtSegni"></textarea>
 			<br>
-			
+
 			<span>Come hai scoperto la scuola:</span><br/>
 			<select name="lstScoperta[]" multiple size="4">
 				<option value="1">Giornali</option>
@@ -65,11 +65,11 @@
 				<option value="4">Altro</option>
 			</select>
 			<br/>
-			
+
 			<input type="button" value="Invia" id="btnInvia">
 			<!--<input type="submit" formaction="registrazione.php" formmethod="get" value="Invia"/>-->
 		</form>
-		
+
 		<br/>
 		<div id="msg" style="color: red"></div>
 	</body>
